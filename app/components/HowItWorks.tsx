@@ -8,7 +8,7 @@ const HowItWorks = () => {
         <div className="step">
           <div className="step-title">Step 1</div>
           <div className="step-image">
-            <img src="/gift-wrap-images.jpg" alt="Gift wrap images" />
+            <img src="/step-1.png" alt="Gift wrap images" />
           </div>
           <div className="step-description">
             Select the perfect gift wrap ensemble from our beautiful collection that suits your style and occasion.
@@ -17,7 +17,7 @@ const HowItWorks = () => {
         <div className="step">
           <div className="step-title">Step 2</div>
           <div className="step-image">
-            <img src="/gift-box-image.jpg" alt="Gift box image" />
+            <img src="/step-2.png" alt="Gift box image" />
           </div>
           <div className="step-description">
             Customize your gift wrap with personalized messages, stickers, or ribbons to make it truly special.
@@ -26,7 +26,7 @@ const HowItWorks = () => {
         <div className="step">
           <div className="step-title">Step 3</div>
           <div className="step-image">
-            <img src="/gift-wrapped-image.jpg" alt="Gift wrapped image" />
+            <img src="/step-3.png" alt="Gift wrapped image" />
           </div>
           <div className="step-description">
             Place your order on our site and provide the delivery details. You can also schedule the delivery for a specific date.
@@ -35,7 +35,7 @@ const HowItWorks = () => {
         <div className="step">
           <div className="step-title">Step 4</div>
           <div className="step-image">
-            <img src="/delivery-image.jpg" alt="Delivery image" />
+            <img src="/step-4.png" alt="Delivery image" />
           </div>
           <div className="step-description">
             Sit back and relax as we carefully wrap your gift and deliver it to your doorstep or directly to your loved one.

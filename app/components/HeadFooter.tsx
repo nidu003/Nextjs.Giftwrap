@@ -12,20 +12,20 @@ const HeadFooter = () => {
       
         <li>
         <div className="flex items-center space-x-2 h-57 ">
-        <Image src="/Group 48096363.png" alt="" width={390} height={57}/>
+        <Image src="/freeshipping.png" alt="" width={390} height={57}/>
       </div>
         </li>
         <li>
         <div className="flex items-center space-x-2 ">
-        <Image src="/Group 48096364.png" alt="" width={390} height={57}/>
+        <Image src="/easyreturn.png" alt="" width={390} height={57}/>
       </div>
         </li><li>
         <div className="flex items-center space-x-2 ">
-        <Image src="/Group 48096365.png" alt="" width={390} height={57}/>
+        <Image src="/samedaydelivery.png" alt="" width={390} height={57}/>
       </div>
         </li><li>
         <div className="flex items-center space-x-2 ">
-        <Image src="/Group 48096366.png" alt="" width={390} height={57}/>
+        <Image src="/securepayment.png" alt="" width={390} height={57}/>
       </div>
         </li>
         

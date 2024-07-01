@@ -8,7 +8,7 @@ const Do = () => {
       <div className="row">
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 143.png" className="card-img-top" alt="Personalized" />
+            <img src="/Personalized.png" className="card-img-top" alt="Personalized" />
             <div className="card-body">
               <h5 className="card-title">Personalized</h5>
             </div>
@@ -16,7 +16,7 @@ const Do = () => {
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 144.png" className="card-img-top" alt="Luxurious" />
+            <img src="/Luxurious.png" className="card-img-top" alt="Luxurious" />
             <div className="card-body">
               <h5 className="card-title">Luxurious</h5>
             </div>
@@ -24,7 +24,7 @@ const Do = () => {
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 142.png" className="card-img-top" alt="Special Occasion" />
+            <img src="/specialoccasion.png" className="card-img-top" alt="Special Occasion" />
             <div className="card-body">
               <h5 className="card-title">Special Occasion</h5>
             </div>
@@ -35,7 +35,7 @@ const Do = () => {
       <div className="row mt-3">
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 179.png" className="card-img-top-2" alt="Money Envelopes" />
+            <img src="/moneyenvelop.png" className="card-img-top-2" alt="Money Envelopes" />
             <div className="card-body">
               <h5 className="card-title">Money Envelopes</h5>
               <a href="#" className="btn btn-primary">Shop Now</a>
@@ -44,7 +44,7 @@ const Do = () => {
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 180.png" className="card-img-top-2" alt="Wax Seals" />
+            <img src="/waxseal.png" className="card-img-top-2" alt="Wax Seals" />
             <div className="card-body">
               <h5 className="card-title">Wax Seals</h5>
               <a href="#" className="btn btn-primary">Shop Now</a>
@@ -53,7 +53,7 @@ const Do = () => {
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/image 181.png" className="card-img-top-2" alt="Gift Tags" />
+            <img src="/gifttag.png" className="card-img-top-2" alt="Gift Tags" />
             <div className="card-body">
               <h5 className="card-title">Gift Tags</h5>
               <a href="#" className="btn btn-primary">Shop Now</a>

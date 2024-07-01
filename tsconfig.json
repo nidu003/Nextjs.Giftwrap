@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve", // or "react" if you are using JSX syntax
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -28,7 +28,9 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "allowJs": true,
+    "noEmit": true
   },
   "include": [
     "next-env.d.ts",

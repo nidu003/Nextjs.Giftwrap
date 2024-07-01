@@ -1,31 +1,38 @@
 import React from 'react';
+import Link from 'next/link';
 
 const NavBar = () => {
   return (
-    <header className="header">
+    <header className="navbar">
       <div className="logo">
-        <img src="/logo.png" alt="Logo" />
+        <Link href="/" passHref>
+          <a>
+            <img src="/logo.png" alt="Logo" width={50} height={50} />
+          </a>
+        </Link>
       </div>
-      <nav className="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div className="search">
+      <div className="search-bar">
         <input type="text" placeholder="Search" />
+        <button type="submit">
+          <img src="/searchbutton.png" alt="Search" width={20} height={20} />
+        </button>
       </div>
-      <div className="actions">
-        <a href="#">
-          <i className="fa fa-heart"></i>
-        </a>
-        <a href="#">
-          <i className="fa fa-shopping-cart"></i>
-        </a>
-        <a href="#">
-          <i className="fa fa-user"></i>
-        </a>
+      <div className="icons">
+        <Link href="/favorites" passHref>
+          <a>
+            <img src="/Heart.jpg" alt="Heart" width={20} height={20} />
+          </a>
+        </Link>
+        <Link href="/cart" passHref>
+          <a>
+            <img src="/Cart.jpg" alt="Cart" width={20} height={20} />
+          </a>
+        </Link>
+        <Link href="/profile" passHref>
+          <a>
+            <img src="/contact.jpg" alt="User" width={20} height={20} />
+          </a>
+        </Link>
       </div>
     </header>
   );
