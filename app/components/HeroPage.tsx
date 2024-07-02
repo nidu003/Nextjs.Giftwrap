@@ -7,8 +7,7 @@ const HeroPage = () => {
     <div className="banner-card">
       <Image src="/Heroimage.png" alt="" width={1500} height={800} />
       <div className="banner-text">
-        <h3>Gifts Wrapped with Care,</h3>
-        <h3>Delivered with Love!</h3>
+        <h3>Gifts Wrapped with Care,<br/>Delivered with Love!</h3>
         <p>We take pride in offering exquisite gift wrapping solutions </p>
           <p>that reflects the care and thoughtfulness you put into selecting them.</p>
         <br></br>

@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Footer from "./components/Footer";
+import "./globals.css";
 
 const RootLayout: React.FC<{ children: ReactNode }> = ({ children }) => (
   <html lang="en">
@@ -8,7 +9,7 @@ const RootLayout: React.FC<{ children: ReactNode }> = ({ children }) => (
       <title>Nextjs App</title>
       <meta name="description" content="Your description here" />
       <link rel="stylesheet" href="/styles.css" />
-      <link rel="stylesheet" href="path/to/globals.css" />
+      <link rel="stylesheet" href="../app/globals.css" />
     </head>
     <body>
       {children}

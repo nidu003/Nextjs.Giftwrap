@@ -7,23 +7,21 @@ import HowItWorks from './components/HowItWorks';
 import GiftWrap from './components/GiftWrap';
 import ImageGrid from './components/ImageGrid';
 import Gallery from './components/Gallary';
-import Newsletter from './components/NewsLetter';
+import Features from './components/Features';
 export default function Home() {
   return (
     <div>
       <div className="bg-custom">
       <NavBar />
-      
-        <HeroPage/>
-        <HeadFooter/>
-        <Do/>
-       <HowItWorks/>
-       <GiftWrap/>
-       <ImageGrid/>
-       <Gallery/>
-       <Newsletter/>
-       
-        </div>
-         </div>
+      <HeroPage/>
+      <HeadFooter/>
+      <Do/>
+      <HowItWorks/>
+      <GiftWrap/>
+      <ImageGrid/>
+      <Features/>
+      <Gallery/>
+      </div>
+       </div>
   );
 }
