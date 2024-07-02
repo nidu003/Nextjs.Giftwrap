@@ -6,7 +6,7 @@ const GiftWrap = () => {
       <h1>Shop Gift Wraps</h1>
       <div className="grid">
         <div className="item">
-          <img src="/floral.png" alt="Floral Print" />
+          <img src="/Floral.png" alt="Floral Print" />
           <h2>Floral Print</h2>
           <p>₹ 250/-</p>
         </div>
