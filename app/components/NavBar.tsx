@@ -1,40 +1,27 @@
-import React from 'react';
+// components/Navbar.tsx
 import Link from 'next/link';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
-    <header className="navbar">
+    <nav className="navbar">
       <div className="logo">
-        <Link href="/" passHref>
-          <a>
-            <img src="/logo.png" alt="Logo" width={50} height={50} />
-          </a>
+        <Link href="/">
+          <img src="/Logo.png" alt="Logo" />
         </Link>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search" />
-        <button type="submit">
-          <img src="/searchbutton.png" alt="Search" width={20} height={20} />
-        </button>
+        <input type="search" placeholder="Search...." />
+        <button type="submit"><i className="fas fa-search" /></button>
       </div>
-      <div className="icons">
-        <Link href="/favorites" passHref>
-          <a>
-            <img src="/Heart.jpg" alt="Heart" width={20} height={20} />
-          </a>
-        </Link>
-        <Link href="/cart" passHref>
-          <a>
-            <img src="/Cart.jpg" alt="Cart" width={20} height={20} />
-          </a>
-        </Link>
-        <Link href="/profile" passHref>
-          <a>
-            <img src="/contact.jpg" alt="User" width={20} height={20} />
-          </a>
-        </Link>
+      <div className="right-side">
+        <div className="icons">
+          <i className="fas fa-heart" />
+          <i className="fas fa-shopping-cart" />
+          <i className="fas fa-user" />
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

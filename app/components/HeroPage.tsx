@@ -9,11 +9,10 @@ const HeroPage = () => {
       <div className="banner-text">
         <h3>Gifts Wrapped with Care,</h3>
         <h3>Delivered with Love!</h3>
-        <p>We take pride in offering exquisite gift wrapping solutions that reflect the care and thoughtfulness you put into selecting them.</p>
-        <Link href="/buy-now" passHref>
-          {/* Use <a> inside <Link> with legacy behavior */}
-          <a className="btn">Buy Now</a>
-        </Link>
+        <p>We take pride in offering exquisite gift wrapping solutions </p>
+          <p>that reflects the care and thoughtfulness you put into selecting them.</p>
+        <br></br>
+        <Link href="/buy-now" className="btn-he btn-primary">Buy Now</Link>
       </div>
     </div>
   );

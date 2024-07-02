@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-
-const Do = () => {
+const Do: React.FC = () => {
   return (
     <div className="container">
       <div className="row">
@@ -35,28 +34,34 @@ const Do = () => {
       <div className="row mt-3">
         <div className="col-md-4">
           <div className="card">
-            <img src="/moneyenvelop.png" className="card-img-top-2" alt="Money Envelopes" />
-            <div className="card-body">
-              <h5 className="card-title">Money Envelopes</h5>
-              <a href="#" className="btn btn-primary">Shop Now</a>
+            <div className="card-img-top-2-container">
+              <img src="/moneyenvelop.png" className="card-img-top-2 hover-effect-zoom-out" alt="Money Envelopes" />
+              <div className="overlay">
+                <h5 className="card-title">Money Envelopes</h5>
+                <a href="#" className="btn btn-primary">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/waxseal.png" className="card-img-top-2" alt="Wax Seals" />
-            <div className="card-body">
-              <h5 className="card-title">Wax Seals</h5>
-              <a href="#" className="btn btn-primary">Shop Now</a>
+            <div className="card-img-top-2-container">
+              <img src="/waxseal.png" className="card-img-top-2 hover-effect-zoom-out" alt="Wax Seals" />
+              <div className="overlay">
+                <h5 className="card-title">Wax Seals</h5>
+                <a href="#" className="btn btn-primary">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
         <div className="col-md-4">
           <div className="card">
-            <img src="/gifttag.png" className="card-img-top-2" alt="Gift Tags" />
-            <div className="card-body">
-              <h5 className="card-title">Gift Tags</h5>
-              <a href="#" className="btn btn-primary">Shop Now</a>
+            <div className="card-img-top-2-container">
+              <img src="/gifttag.png" className="card-img-top-2 hover-effect-zoom-out" alt="Gift Tags" />
+              <div className="overlay">
+                <h5 className="card-title">Gift Tags</h5>
+                <a href="#" className="btn btn-primary">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>

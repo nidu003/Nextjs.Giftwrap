@@ -1,71 +1,105 @@
-
-import React from "react";
-import { LuFacebook } from "react-icons/lu";
-import { CiTwitter } from "react-icons/ci";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { FaInstagram } from "react-icons/fa";
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-section">
-        <div className="foot-head">
-          <h1>WEB LOGO</h1>
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="logo">
+              <img src="/Logo.png" alt="EC Gift Wrap" />
+            </div>
+            <p>
+              Experience the Art of Gifting with Our Exquisite Wrapping Services. Discover Thoughtful Options for Every Occasion.
+            </p>
+            <ul className="social-media">
+              <li>
+                <a href="#">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-google"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fas fa-times"></i>
+                </a>
+              </li>
+            </ul>
+            <ul className="payment-methods">
+              <li>
+                <img src="/Group.png" alt="Paypal" />
+              </li>
+              <li>
+                <img src="/Vector (1).png" alt="Mastercard" />
+              </li>
+              <li>
+                <img src="/path3005.png" alt="Visa" />
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <h3 className="footer-heading">For Customer</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">FAQS</a>
+              </li>
+              <li>
+                <a href="#">My account</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <h3 className="footer-heading">Information</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="#">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p>Some footer text about the</p>
-        <p>Agency. Just a little description to</p>
-        <p>help people understand you better.</p>
-        <div className="social-icons">
-          <div className="icon-styles">
-            <LuFacebook />
-          </div>
-          <div className="icon-styles">
-            <CiTwitter />
-          </div>
-          <div className="icon-styles">
-            <TiSocialLinkedinCircular />
-          </div>
-          <div className="icon-styles">
-            <FaInstagram />
+        <div className="row copyright">
+          <div className="col-md-12">
+            <p>
+              Design and Developed by GBJ Buzz Copyright © 2024 cmp name
+            </p>
           </div>
         </div>
       </div>
-
-      <div className="footer-section">
-        <div className="foot-head">
-          <h1>Quick Links</h1>
-        </div>
-        <ul>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#about">About Us</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="footer-section">
-        <div className="foot-head">
-          <h1>Address</h1>
-        </div>
-        <p>
-          Design Agency Head Office.
-          <br />
-          Airport Road
-          <br />
-          United Arab Emirate
-        </p>
-      </div>
-
-      <div className="footer-last">Copyright Design Agency 2022</div>
-    </div>
+    </footer>
   );
 };
 
