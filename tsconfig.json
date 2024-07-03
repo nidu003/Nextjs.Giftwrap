@@ -39,6 +39,7 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "app/components/HowItWork.tsx"  // Exclude the missing file
   ]
 }

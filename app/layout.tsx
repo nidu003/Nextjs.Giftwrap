@@ -1,8 +1,11 @@
 import React, { ReactNode } from "react";
 import Footer from "./components/Footer";
-import "./globals.css";
+import "../app/globals.css";
+interface Props {
+  children: ReactNode;
+}
 
-const RootLayout: React.FC<{ children: ReactNode }> = ({ children }) => (
+const RootLayout: React.FC<Props> = ({ children }) => (
   <html lang="en">
     <head>
       <meta charSet="UTF-8" />
