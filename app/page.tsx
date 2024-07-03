@@ -1,13 +1,13 @@
 import React from 'react';
-import NavBar from "./components/NavBar";
-import HeroPage from "./components/HeroPage";
-import HeadFooter from './components/HeadFooter';
-import Do from './components/Do';
-import HowItWorks from './components/HowItWork';
-import GiftWrap from './components/GiftWrap';
-import ImageGrid from './components/ImageGrid';
-import Gallery from './components/Gallary';
-import Features from './components/Features';
+import NavBar from './Components/Navbar';
+import HeroPage from './Components/HeroPage';
+import HeadFooter from './Components/HeadFooter';
+import Do from './Components/Do';
+import HowItWorks from './Components/HowItWorks';
+import GiftWrap from './Components/GiftWrap';
+import ImageGrid from './Components/ImageGrid';
+import Gallery from './Components/Gallary';
+import Features from './Components/Features';
 export default function Home() {
   return (
     <div>

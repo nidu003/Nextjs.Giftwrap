@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Footer from "./components/Footer";
+import Footer from "./Components/Footer";
 import "../app/globals.css";
 interface Props {
   children: ReactNode;

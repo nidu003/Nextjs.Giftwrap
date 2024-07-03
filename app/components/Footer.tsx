@@ -43,8 +43,8 @@ const Footer = () => {
             </ul>
             <div className="mt-4 flex space-x-4">
               <img src="/Group.png" alt="Paypal" className="w-12 h-auto" />
-              <img src="/Vector.png" alt="Mastercard" className="w-12 h-auto" />
-              <img src="Path.png" alt="Visa" className="w-12 h-auto" />
+              <img src="/Vector (1).png" alt="Mastercard" className="w-12 h-auto" />
+              <img src="/path3005.png" alt="Visa" className="w-12 h-auto" />
             </div>
           </div>
 

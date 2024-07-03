@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "type": "modules",
     "start": "next start",
     "lint": "next lint",
     "clean": "rmdir /s /q .next"
