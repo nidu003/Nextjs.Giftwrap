@@ -63,7 +63,7 @@ html, body {
 
 .button {
   background-color: rgba(144, 0, 105, 1);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   font-size: 22.23px;
   border: none;
@@ -114,9 +114,7 @@ html, body {
      transform: translate(-50%, -50%);
      text-align: center;
      z-index: 1;
-   }
- 
-  
+   } 
  }
 
 
@@ -275,23 +273,15 @@ html, body {
 }
 
 /*do*/
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Adds 20px gap between columns */
 }
 
 .col-md-4 {
-  width: 33.33%;
+  width: 31.33%; /* Adjusted width to accommodate gap */
   padding: 10px;
 }
 
@@ -393,10 +383,12 @@ html, body {
     margin-bottom: 20px;
   }
 
-  .mt-5{
+  .mt-5 {
     text-align: center;
   }
 }
+
+
 /*howitwork*/
 .How-cont {
   display: flex;
@@ -807,8 +799,14 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   width: 129.05px;
   height: 229.28px;
   top: 103px;
+  left: 95px;
 }
-
+.transparent-image2{
+  width: 310.11px;
+  height: 150.76px;
+  top: 81px;
+  left: 749px;
+}
 /* Mobile view */
 @media only screen and (max-width: 768px) {
   .container-ggg {
@@ -871,6 +869,15 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
     width: 50px;
     height: 80px;
   }
+  .transparent-image2 {
+    width: 50%; /* Example percentage for width */
+    max-width: 310.11px; /* Optionally set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 10%; /* Example percentage for top position */
+    left: 50%; /* Example percentage for left position */
+    transform: translate(-50%, -50%); /* Center the image horizontally and vertically */
+  }  
 }
 
 /*horizontal gallery*/
@@ -890,16 +897,16 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   border-radius: 10px; /* add a border radius if desired */
 }
 
-/*footer*/
+/* General Footer Styles */
 .footer {
-  color:rgba(19, 19, 19, 1);
+  color: rgba(19, 19, 19, 1);
   max-width: 1920px;
   max-height: 619px;
 }
 
 .footer .container {
   background-color: rgba(19, 19, 19, 1);
-  max-width: 19200px;
+  max-width: 1920px;
   margin: 0 auto;
   max-height: 619px;
   color: rgba(19, 19, 19, 1);
@@ -913,13 +920,11 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
 
 .footer .col-md-4 {
   width: 33.33%;
-  
 }
 
 .footer .logo {
   margin-bottom: 5px;
   margin-left: 100px;
-  
 }
 
 .footer .logo img {
@@ -927,7 +932,7 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   height: 87.33px;
 }
 
-.footer p{
+.footer p {
   font-family: Poppins;
   font-weight: 400;
   font-size: 21px;
@@ -1027,12 +1032,9 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
   margin-left: 525px;
 }
 
-
-
-/* Mobile view styles */
+/* Mobile View Styles */
 @media (max-width: 768px) {
   .footer .row {
-    background-color: rgba(19, 19, 19, 1);
     flex-direction: column;
   }
 
@@ -1075,8 +1077,8 @@ padding: 11.11px, 25.93px, 11.11px, 25.93px;
     margin-left: 20px;
   }
 
-  .footer .copyright {
-    background-color: rgba(19, 19, 19, 1);
-    
+  .footer .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

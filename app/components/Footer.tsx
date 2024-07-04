@@ -2,17 +2,17 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <div className="logo">
+    <footer className="footer bg-gray-800 text-white">
+      <div className="container mx-auto px-4 lg:px-0 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="footer-section">
+            <div className="logo mb-4">
               <img src="/Logo.png" alt="EC Gift Wrap" />
             </div>
-            <p>
+            <p className="text-sm">
               Experience the Art of Gifting with Our Exquisite Wrapping Services. Discover Thoughtful Options for Every Occasion.
             </p>
-            <ul className="social-media">
+            <ul className="social-media mt-4 flex gap-4">
               <li>
                 <a href="#">
                   <i className="fab fa-facebook-f"></i>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <ul className="payment-methods">
+            <ul className="payment-methods mt-4 flex gap-4">
               <li>
                 <img src="/Group.png" alt="Paypal" />
               </li>
@@ -56,8 +56,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
-            <h3 className="footer-heading">For Customer</h3>
+          <div className="footer-section">
+            <h3 className="footer-heading mb-4">For Customers</h3>
             <ul className="footer-links">
               <li>
                 <a href="#">About Us</a>
@@ -73,8 +73,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
-            <h3 className="footer-heading">Information</h3>
+          <div className="footer-section">
+            <h3 className="footer-heading mb-4">Information</h3>
             <ul className="footer-links">
               <li>
                 <a href="#">Shipping & Delivery</a>
@@ -91,12 +91,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="row copyright">
-          <div className="col-md-12">
-            <p>
-              Design and Developed by GBJ Buzz Copyright © 2024 cmp name
-            </p>
-          </div>
+        <div className="mt-8 text-center text-sm">
+          <p>
+            Design and Developed by GBJ Buzz &copy; 2024
+          </p>
         </div>
       </div>
     </footer>

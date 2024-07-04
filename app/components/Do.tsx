@@ -30,8 +30,10 @@ const Do: React.FC = () => {
           </div>
         </div>
       </div>
+
       <h2 className="mt-5">Trending Now</h2>
-      <div className="row mt-3">
+
+      <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="card">
             <div className="card-img-top-2-container">

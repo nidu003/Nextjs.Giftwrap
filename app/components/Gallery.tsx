@@ -23,6 +23,7 @@ const Gallery = () => {
       </div>
       <div className="container-ggg">
         <img src="/ballon.png" alt="Transparent Image" className="transparent-image" />
+        <img src="/giftbox.png" alt="Transparent Image2" className="transparent-image" />
         <div className="newsletter-sectiong">
           <div className="left-side">
             <h2>Newsletter Updates</h2>
