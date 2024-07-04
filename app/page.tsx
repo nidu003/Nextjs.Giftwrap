@@ -6,8 +6,9 @@ import Do from './Components/Do';
 import HowItWorks from './Components/HowItWorks';
 import GiftWrap from './Components/GiftWrap';
 import ImageGrid from './Components/ImageGrid';
-import Gallery from './Components/Gallary';
+import Gallery from './Components/Gallery';
 import Features from './Components/Features';
+import Footer from './Components/Footer';;
 
 export default function Home() {
   return (
