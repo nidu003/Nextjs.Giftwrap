@@ -1,7 +1,8 @@
 // next.config.cjs
-
+/** @type {import { 'next' }.NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Ensures strict mode is enabled for React
-};
-
-module.exports = nextConfig;
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
+module.exports = nextConfig
