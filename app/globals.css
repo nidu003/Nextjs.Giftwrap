@@ -956,9 +956,9 @@ h1 {
   .transparent-image2 {
     width: 50%; /* Adjust width as needed */
     max-width: 310.11px; /* Set maximum width */
-    height: auto; /* Maintain aspect ratio */
+    height: 80px; /* Maintain aspect ratio */
     position: absolute;
-    top: 10%; /* Position from top */
+    
     right: 20px; /* Adjusted to position on the right side */
     transform: translate(0, -50%); /* Center vertically */
   
@@ -971,8 +971,6 @@ h1 {
       transform: translate(0, -50%); /* Center vertically */
     }
   }
-  
-  
   
 }
 
@@ -1031,11 +1029,23 @@ h1 {
 .footer p {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px; /* Adjust font size for mobile */
   line-height: 24px;
   color: rgba(213, 213, 213, 1);
-  margin-left: 100px;
+  margin-left: 20px; /* Adjust margin for mobile */
+  text-align: center; /* Center align text on mobile */
+  background-color: #000; /* Set background color to black */
+  padding: 10px; /* Add padding for better readability */
 }
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+  .footer p {
+    font-size: 16px; /* Further adjust font size for smaller screens if needed */
+    margin-left: 0; /* Remove left margin for center alignment */
+  }
+}
+
 
 .footer .social-media {
   list-style: none;
