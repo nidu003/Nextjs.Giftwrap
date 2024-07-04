@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const Gallery = () => {
+const Gallery: React.FC = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -19,11 +19,10 @@ const Gallery = () => {
         <img src="/last4.png" alt="Gallery Image 2" />
         <img src="/last5.png" alt="Gallery Image 1" />
         <img src="/last6.png" alt="Gallery Image 2" />
-
       </div>
       <div className="container-ggg">
         <img src="/ballon.png" alt="Transparent Image" className="transparent-image" />
-        <img src="/giftbox.png" alt="Transparent Image2" className="transparent-image" />
+        <img src="/giftbox.png" alt="Transparent Image2" className="transparent-image2" />
         <div className="newsletter-sectiong">
           <div className="left-side">
             <h2>Newsletter Updates</h2>
@@ -39,7 +38,7 @@ const Gallery = () => {
                 placeholder="Enter Email-id"
                 required
               />
-              <button type="submit" className="submit-button">SUBMIT</button>
+              <button type="submit" className="submit-button bg-#AD5A29">SUBMIT</button>
             </form>
           </div>
         </div>

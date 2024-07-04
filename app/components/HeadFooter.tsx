@@ -1,22 +1,21 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const HeadFooter = () => {
   return (
-    <div className="headfooter-container bg-gray-100 py-4">
-      <ul className="headfooternav flex flex-wrap justify-center items-center space-x-4">
+    <div className="headfooter-container">
+      <ul className="headfooternav">
         <li className="flex items-center">
-          <Image src="/freeshipping.png" alt="" width={195} height={28} />
+          <Image src="/freeshipping.png" alt="Free Shipping" width={395} height={57} />
         </li>
         <li className="flex items-center">
-          <Image src="/easyreturn.png" alt="" width={195} height={28} />
+          <Image src="/easyreturn.png" alt="Easy Return" width={395} height={57} />
         </li>
         <li className="flex items-center">
-          <Image src="/samedaydelivery.png" alt="" width={195} height={28} />
+          <Image src="/samedaydelivery.png" alt="Same Day Delivery" width={395} height={57} />
         </li>
         <li className="flex items-center">
-          <Image src="/securepayment.png" alt="" width={195} height={28} />
+          <Image src="/securepayment.png" alt="Secure Payment" width={395} height={57} />
         </li>
       </ul>
     </div>
