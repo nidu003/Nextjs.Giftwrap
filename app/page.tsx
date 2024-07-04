@@ -3,11 +3,11 @@ import NavBar from './Components/NavBar';
 import HeroPage from './Components/HeroPage';
 import HeadFooter from './Components/HeadFooter';
 import Do from './Components/Do';
-import HowItWorks from './Components/HowItWorks';
-import GiftWrap from './Components/GiftWrap';
-import ImageGrid from './Components/ImageGrid';
-import Features from './Components/Features';
-import Gallery from './Components/Gallery';
+import HowItWorks from './Components/HowItWorks';  // Assuming this component exists
+import GiftWrap from './Components/GiftWrap';  // Assuming this component exists
+import ImageGrid from './Components/ImageGrid';  // Assuming this component exists
+import Features from './Components/Features';  // Assuming this component exists
+import Gallery from './Components/Gallery';  // Assuming this component exists
 
 export default function Home() {
   return (
