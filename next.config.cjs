@@ -1,7 +1,5 @@
-// next.config.js
-
 const nextConfig = {
-  reactStrictMode: true, // Ensures strict mode is enabled for React
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;
