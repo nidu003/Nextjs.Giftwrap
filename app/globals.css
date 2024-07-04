@@ -953,7 +953,6 @@ h1 {
     width: 50px;
     height: 80px;
   }
-
   .transparent-image2 {
     width: 50%; /* Adjust width as needed */
     max-width: 310.11px; /* Set maximum width */
@@ -962,16 +961,17 @@ h1 {
     top: 10%; /* Position from top */
     right: 20px; /* Adjusted to position on the right side */
     transform: translate(0, -50%); /* Center vertically */
-  }
   
-  /* Mobile view */
-  @media only screen and (max-width: 768px) {
-    .transparent-image2 {
+    /* Mobile view */
+    @media only screen and (max-width: 768px) {
       width: 80%; /* Adjust width for smaller screens */
-      max-width: 100%; /* Ensure it doesn't exceed the container's width */
+      max-width: 80%; /* Ensure it doesn't exceed the container's width */
       right: 10px; /* Adjust right position for smaller screens */
+      top: 5%; /* Adjust top position for smaller screens */
+      transform: translate(0, -50%); /* Center vertically */
     }
   }
+  
   
   
 }
