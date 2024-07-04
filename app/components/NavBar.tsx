@@ -1,46 +1,34 @@
-// components/Navbar.tsx
-"use client";
 import Link from 'next/link';
-import { useState } from 'react'; // Import useState hook for handling state
 import '@fortawesome/fontawesome-free/css/all.css';
 
 const NavBar: React.FC = () => {
-  // State for handling search input
-  const [searchTerm, setSearchTerm] = useState('');
-
-  // Function to handle form submission (not implemented here)
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // Implement your form submission logic here
-    console.log('Search term:', searchTerm);
-  };
-
   return (
-    <nav className="navbar bg-gray-900 text-white p-4">
-      <div className="flex items-center justify-between">
+    <nav className="bg-white p-4 flex flex-col md:flex-row justify-between items-center text-gray-800">
+      <div className="flex justify-between w-full md:w-auto items-center">
         <div className="logo">
           <Link href="/">
-            <img src="/Logo.png" alt="Logo" className="h-12" />
+            <img src="/Logo.png" alt="Logo" className="h-8 md:h-12" />
           </Link>
         </div>
-        <div className="search-bar flex items-center">
-          <form onSubmit={handleSubmit} className="flex">
-            <input
-              type="search"
-              placeholder="Search...."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="py-2 px-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-            <button type="submit" className="py-2 px-4 bg-blue-500 text-white rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-600">
-              <i className="fas fa-search" />
-            </button>
-          </form>
+        <div className="md:hidden">
+          <button className="text-gray-800">
+            <i className="fas fa-bars"></i>
+          </button>
         </div>
-        <div className="right-side flex items-center space-x-4">
-          <i className="fas fa-heart text-xl cursor-pointer" />
-          <i className="fas fa-shopping-cart text-xl cursor-pointer" />
-          <i className="fas fa-user text-xl cursor-pointer" />
+      </div>
+      <div className="hidden md:flex w-full md:w-auto mt-4 md:mt-0">
+        <div className="search-bar flex items-center w-full md:w-auto">
+          <input type="search" placeholder="Search...." className="p-2 rounded-l-md w-full md:w-64" />
+          <button type="submit" className="p-2 bg-gray-700 rounded-r-md">
+            <i className="fas fa-search" />
+          </button>
+        </div>
+        <div className="right-side flex items-center ml-4">
+          <div className="icons flex space-x-4">
+            <i className="fas fa-heart" />
+            <i className="fas fa-shopping-cart" />
+            <i className="fas fa-user" />
+          </div>
         </div>
       </div>
     </nav>
