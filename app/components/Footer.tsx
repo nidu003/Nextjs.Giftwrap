@@ -1,97 +1,102 @@
 import React from 'react';
-import Image from 'next/image';
-import '@fortawesome/fontawesome-free/css/all.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <div className="mb-4">
-              <Image src="/Logo.png" alt="EC Gift Wrap" width={150} height={50} />
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="logo">
+              <img src="/Logo.png" alt="EC Gift Wrap" />
             </div>
-            <p className="mb-4">
+            <p>
               Experience the Art of Gifting with Our Exquisite Wrapping Services. Discover Thoughtful Options for Every Occasion.
             </p>
-            <ul className="flex space-x-4 mb-4">
+            <ul className="social-media">
               <li>
-                <a href="#" className="hover:text-gray-400">
+                <a href="#">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-400">
+                <a href="#">
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-400">
+                <a href="#">
                   <i className="fab fa-google"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-400">
+                <a href="#">
                   <i className="fab fa-youtube"></i>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-400">
+                <a href="#">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
-            </ul>
-            <ul className="flex space-x-4">
               <li>
-                <Image src="/Group.png" alt="Paypal" width={40} height={40} />
-              </li>
-              <li>
-                <Image src="/Vector.png" alt="Mastercard" width={40} height={40} />
-              </li>
-              <li>
-                <Image src="/Path.png" alt="Visa" width={40} height={40} />
+                <a href="#">
+                  <i className="fas fa-times"></i>
+                </a>
               </li>
             </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">For Customers</h3>
-            <ul>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">About Us</a>
+            <ul className="payment-methods">
+              <li>
+                <img src="/Group.png" alt="Paypal" />
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">Blog</a>
+              <li>
+                <img src="/Vector.png" alt="Mastercard" />
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">FAQS</a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">My account</a>
+              <li>
+                <img src="/Path.png" alt="Visa" />
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Information</h3>
-            <ul>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">Shipping & Delivery</a>
+          <div className="col-md-4">
+            <h3 className="footer-heading">For Customer</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="#">About Us</a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">Return Policy</a>
+              <li>
+                <a href="#">Blog</a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">Privacy Policy</a>
+              <li>
+                <a href="#">FAQS</a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:text-gray-400">Contact Us</a>
+              <li>
+                <a href="#">My account</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <h3 className="footer-heading">Information</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="#">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p>
-            Design and Developed by GBJ Buzz © 2024
-          </p>
+        <div className="row copyright">
+          <div className="col-md-12">
+            <p>
+              Design and Developed by GBJ Buzz Copyright © 2024 cmp name
+            </p>
+          </div>
         </div>
       </div>
     </footer>

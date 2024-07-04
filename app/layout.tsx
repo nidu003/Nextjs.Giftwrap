@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Footer from "./Components/Footer";
+import "../app/globals.css"; // Adjust path if necessary
+import Footer from './Components/Footer'; // Adjust path
 
 export const metadata: Metadata = {
   title: "Nextjs App",

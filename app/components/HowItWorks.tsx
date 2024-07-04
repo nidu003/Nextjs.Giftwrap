@@ -3,8 +3,7 @@ import React from 'react';
 function HowItWorks() {
   return (
     <div className="how-it-works-container">
-      <h2 className="text-center font-bold">How It Works</h2>
-
+     <h2><b><big>How It Works</big></b></h2>
       <div className="gift-wrap-selection grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
         <div className="gift-wrap-option bg-white p-6 rounded-lg shadow-md">
           <img src="/step-1.png" alt="Step 1" className="gift-wrap-image mb-4" />
