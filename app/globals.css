@@ -650,15 +650,6 @@ h1 {
 
 /* imagegrid */
 .cont {
-  display: flex;
-  max-width: 100%; /* Use 100% width to make it responsive */
-  max-height: 100%; /* Use 100% height to make it responsive */
-  align-items: center;
-  justify-content: center;
-  padding: 10px; /* Add some padding for better presentation */
-}
-
-.image-grid-i {
   display: grid;
   grid-template-areas:
     "birthday flowers corporate"
@@ -672,7 +663,7 @@ h1 {
 
 /* Responsive adjustments */
 @media only screen and (max-width: 1024px) {
-  .image-grid-i {
+  .cont {
     grid-template-areas:
       "birthday corporate"
       "flowers flowers"
@@ -681,7 +672,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .image-grid-i {
+  .cont {
     grid-template-areas:
       "birthday"
       "flowers"
@@ -691,38 +682,34 @@ h1 {
     grid-gap: 8px; /* Reduce gap for smaller screens */
     margin-left: 0; /* Center content for smaller screens */
   }
-
-  .cont {
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
 }
 
-.image-grid-i img {
+.cont img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.image-grid-i img:nth-child(1) {
+.cont .birthday {
   grid-area: birthday;
 }
 
-.image-grid-i img:nth-child(2) {
+.cont .flowers {
   grid-area: flowers;
 }
 
-.image-grid-i img:nth-child(3) {
+.cont .corporate {
   grid-area: corporate;
 }
 
-.image-grid-i img:nth-child(4) {
+.cont .weddings {
   grid-area: weddings;
 }
 
-.image-grid-i img:nth-child(5) {
+.cont .anniversary {
   grid-area: anniversary;
 }
+
 
 /* Newsletter section */
 .container {
@@ -939,9 +926,6 @@ h1 {
   .right-side button[type="submit"]:hover {
     background-color: #873f1d; /* Darker background color on hover */
   }
-  
-  
-
   .vertical-separator {
     display: none;
   }
