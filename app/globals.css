@@ -117,6 +117,125 @@ html, body {
    } 
  }
 
+/* Container for the hero section */
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100vh; /* Full viewport height */
+}
+
+/* Hero image styling */
+.object-cover {
+  object-fit: cover;
+}
+
+/* Content styling */
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-opacity-50 {
+  opacity: 0.5;
+}
+
+.text-white {
+  color: white;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* Hero title styling */
+.hero-title {
+  font-family: 'Alegreya', serif;
+  font-size: 69.84px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 39px;
+    line-height: 43px;
+  }
+}
+
+/* Hero text styling */
+.hero-text {
+  font-family: 'Alice', serif;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/* Button styling */
+.btn-he {
+  background-color: rgba(144, 0, 105, 1);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 22.23px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-he:hover {
+  background-color: rgba(120, 0, 88, 1);
+}
+
+@media (max-width: 768px) {
+  .btn-he {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+
 
 /*navbar*/
 .navbar {
@@ -287,7 +406,6 @@ html, body {
   }
 }
 
-
 /*do*/
 .row {
   display: flex;
@@ -403,27 +521,33 @@ html, body {
     text-align: center;
   }
 }
+/*howitworks*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
 
-/*howitwork*/
+/* Container for How It Works Section */
 .How-cont {
   display: flex;
   flex-direction: column;
   padding: 2rem;
   background-color: rgba(255, 229, 237, 0.61);
   max-width: 1920px;
-  margin: 0 auto; /* add this to center the container */
+  margin: 0 auto; /* Center the container */
 }
 
 .How-cont h2 {
-  font-family: Alegreya;
+  font-family: 'Alegreya', serif;
   font-size: 60px;
   font-weight: 500;
-  color: rgba(184, 10, 137, 1);
-  margin: left 0; 
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: rgba(255, 229, 237, 0.61);
+  color:#B80A89;/* Make the text readable on the background */
+  padding: 10px; /* Adding padding to give some space around the text */
   margin-bottom: 2rem;
-  text-align: center; 
 }
 
+/* Container for Gift Wrap Options */
 .gift-wrap-selection {
   display: flex;
   flex-wrap: wrap;
@@ -432,6 +556,7 @@ html, body {
   max-width: 1100px;
 }
 
+/* Individual Gift Wrap Option */
 .gift-wrap-option {
   flex: 0 0 30%;
   margin: 20px;
@@ -462,18 +587,17 @@ html, body {
   font-size: 32.95px;
   font-weight: 800;
   color: rgba(184, 10, 137, 1);
-  margin-left: 0; /* remove the margin-left to make it responsive */
-  text-align: center; /* add this to center the title text */
+  text-align: center; /* Center the title text */
 }
 
 .gift-wrap-text p {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 20.45px;
   color: rgba(62, 62, 62, 1);
 }
 
-/* add media queries to make it responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .gift-wrap-option {
     flex: 0 0 50%;
@@ -485,7 +609,7 @@ html, body {
     flex: 0 0 100%;
   }
   .gift-wrap-image {
-    height: 150px; /* adjust the image height for smaller screens */
+    height: 150px; /* Adjust the image height for smaller screens */
   }
 }
 
@@ -493,8 +617,8 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px; /* adjust the width to your liking */
-  height: 100%; /* make it full height */
+  width: 100px; /* Adjust the width to your liking */
+  height: 100%; /* Make it full height */
   background-size: cover;
 }
 
@@ -503,6 +627,7 @@ html, body {
   height: 100%;
   object-fit: cover;
 }
+
 
 /*giftgrap*/
 .container-g {
