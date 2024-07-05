@@ -953,17 +953,26 @@ h1 {
     width: 50px;
     height: 80px;
   }
+  .image-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    padding: 0; /* Ensure no padding causes overflow */
+    margin: 0; /* Ensure no margin causes overflow */
+  }
+  
   .transparent-image2 {
     width: 50%; /* Adjust width as needed */
     max-width: 310.11px; /* Set maximum width */
     height: 80px; /* Maintain aspect ratio */
     position: absolute;
-    
     right: 20px; /* Adjusted to position on the right side */
     transform: translate(0, -50%); /* Center vertically */
+  }
   
-    /* Mobile view */
-    @media only screen and (max-width: 768px) {
+  /* Mobile view */
+  @media only screen and (max-width: 768px) {
+    .transparent-image2 {
       width: 80%; /* Adjust width for smaller screens */
       max-width: 80%; /* Ensure it doesn't exceed the container's width */
       right: 10px; /* Adjust right position for smaller screens */
@@ -996,6 +1005,7 @@ h1 {
   color: rgba(19, 19, 19, 1);
   max-width: 1920px;
   max-height: 619px;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .footer .container {
@@ -1004,12 +1014,14 @@ h1 {
   margin: 0 auto;
   max-height: 619px;
   color: rgba(19, 19, 19, 1);
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .footer .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Ensure elements wrap within the container */
 }
 
 .footer .col-md-4 {
@@ -1029,23 +1041,22 @@ h1 {
 .footer p {
   font-family: Poppins;
   font-weight: 400;
-  font-size: 18px; /* Adjust font size for mobile */
+  font-size: 18px;
   line-height: 24px;
   color: rgba(213, 213, 213, 1);
-  margin-left: 20px; /* Adjust margin for mobile */
-  text-align: center; /* Center align text on mobile */
-  background-color: #000; /* Set background color to black */
-  padding: 10px; /* Add padding for better readability */
+  margin-left: 20px;
+  text-align: center;
+  background-color: #000;
+  padding: 10px;
 }
 
 /* Mobile view */
 @media only screen and (max-width: 768px) {
   .footer p {
-    font-size: 16px; /* Further adjust font size for smaller screens if needed */
-    margin-left: 0; /* Remove left margin for center alignment */
+    font-size: 16px;
+    margin-left: 0;
   }
 }
-
 
 .footer .social-media {
   list-style: none;

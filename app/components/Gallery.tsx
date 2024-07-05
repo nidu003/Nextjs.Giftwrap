@@ -22,7 +22,9 @@ const Gallery: React.FC = () => {
       </div>
       <div className="container-ggg">
         <img src="/ballon.png" alt="Transparent Image" className="transparent-image" />
+        <div className="image-container">
         <img src="/giftbox.png" alt="Transparent Image2" className="transparent-image2" />
+        </div>
         <div className="newsletter-sectiong">
           <div className="left-side">
             <h2>Newsletter Updates</h2>
@@ -38,7 +40,7 @@ const Gallery: React.FC = () => {
                 placeholder="Enter Email-id"
                 required
               />
-              <button type="submit" className="submit-button bg-#AD5A29">SUBMIT</button>
+              <button type="submit" className="submit-button">SUBMIT</button>
             </form>
           </div>
         </div>
