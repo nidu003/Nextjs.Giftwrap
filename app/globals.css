@@ -968,7 +968,10 @@ h1 {
     position: absolute;
     right: 20px; /* Adjusted to position on the right side */
     transform: translate(0, -50%); /* Center vertically */
+    z-index: 10; /* Ensure it is above other elements */
+    visibility: visible; /* Ensure it is visible */
   }
+  
   
   /* Mobile view */
   @media only screen and (max-width: 768px) {
@@ -980,6 +983,7 @@ h1 {
       transform: translate(0, -50%); /* Center vertically */
     }
   }
+  
   
 }
 
