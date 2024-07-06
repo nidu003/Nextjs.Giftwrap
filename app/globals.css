@@ -236,8 +236,6 @@ html, body {
   }
 }
 
-
-
 /*navbar*/
 .navbar {
   background-color: rgba(255, 255, 255, 1);
@@ -408,15 +406,23 @@ html, body {
 }
 
 /*do*/
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Adds 20px gap between columns */
 }
 
 .col-md-4 {
-  width: 31.33%; /* Adjusted width to accommodate gap */
+  width: 33.33%;
   padding: 10px;
 }
 
@@ -435,10 +441,7 @@ html, body {
   border-top-right-radius: 10px;
 }
 
-.hover-effect-zoom-out:hover {
-  transform: scale(0.9);
-  transition: transform 0.3s ease-in-out;
-}
+
 
 .card-img-top-2 {
   width: 100%;
@@ -446,8 +449,17 @@ html, body {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: inline-block;
+
 }
 
+.hover-effect-zoom-out {
+  transition: transform 0.3s; /* Add a transition effect */
+}
+
+.hover-effect-zoom-out:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
 .card-body {
   padding: 20px;
   height: 62px;
@@ -488,6 +500,7 @@ html, body {
 
 .card-img-top-2-container {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -504,6 +517,20 @@ html, body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
+  pointer-events: none;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(184, 10, 137, 1);
+  color: #FFFFFF; /* White text */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the tag is on top of the image */
 }
 
 /* Mobile view styles */
@@ -518,10 +545,12 @@ html, body {
     margin-bottom: 20px;
   }
 
-  .mt-5 {
+  .mt-5{
     text-align: center;
   }
 }
+
+
 /*howitworks*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
 
